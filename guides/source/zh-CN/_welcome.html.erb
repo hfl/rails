@@ -1,0 +1,32 @@
+<h2>Ruby on Rails 指南 (<%= @edge ? @edge[0, 7] : @version %>)</h2>
+
+<% if @edge %>
+<p>
+  这是<b>尝鲜（Edge）版指南</b>——基于 <a href="https://github.com/rails/rails/tree/<%= @edge %>">main@<%= @edge[0, 7] %></a> 编写。
+</p>
+<p>
+  如果您看稳定版本的指南，请到
+  <a href="https://guides.rubyonrails.org">https://guides.rubyonrails.org</a> 查找。
+</p>
+<% else %>
+<p>
+  这是基于 <a href="https://github.com/rails/rails/tree/<%= @version %>"><%= @version %></a> 的 Rails 7.1 的新版本指南。
+  这些指南旨在帮助您能够利用 Rails 立即投入生产开发，帮助您理解相关组件的精巧配合和合作。
+</p>
+<% end %>
+<p>
+早期版本还有：
+<a href="https://guides.rubyonrails.org/v7.0/" data-turbo="false">Rails 7.0</a>、
+<a href="https://guides.rubyonrails.org/v6.1/" data-turbo="false">Rails 6.1</a>、
+<a href="https://guides.rubyonrails.org/v6.0/" data-turbo="false">Rails 6.0</a>、
+<a href="https://guides.rubyonrails.org/v5.2/" data-turbo="false">Rails 5.2</a>、
+<a href="https://guides.rubyonrails.org/v5.1/" data-turbo="false">Rails 5.1</a>、
+<a href="https://guides.rubyonrails.org/v5.0/" data-turbo="false">Rails 5.0</a>、
+<a href="https://guides.rubyonrails.org/v4.2/" data-turbo="false">Rails 4.2</a>、
+<a href="https://guides.rubyonrails.org/v4.1/" data-turbo="false">Rails 4.1</a>、
+<a href="https://guides.rubyonrails.org/v4.0/" data-turbo="false">Rails 4.0</a>、
+<a href="https://guides.rubyonrails.org/v3.2/" data-turbo="false">Rails 3.2</a>、
+<a href="https://guides.rubyonrails.org/v3.1/" data-turbo="false">Rails 3.1</a>、
+<a href="https://guides.rubyonrails.org/v3.0/" data-turbo="false">Rails 3.0</a> 和
+<a href="https://guides.rubyonrails.org/v2.3/" data-turbo="false">Rails 2.3</a>。
+</p>
